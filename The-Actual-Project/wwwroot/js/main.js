@@ -109,14 +109,14 @@ MetronicApp.controller('FooterController', ['$scope', function($scope) {
 /* Setup Rounting For All Pages */
 MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     // Redirect any unmatched url
-    $urlRouterProvider.otherwise("/dashboard.html");  
+    $urlRouterProvider.otherwise("dashboard");  
 
     $stateProvider
 
         // Dashboard
         .state('dashboard', {
-            url: "/dashboard.html",
-            templateUrl: "views/dashboard.html",            
+            url: "dashboard",
+            templateUrl: "dashboard",            
             data: {pageTitle: 'Admin Dashboard Template'},
             controller: "DashboardController",
             resolve: {

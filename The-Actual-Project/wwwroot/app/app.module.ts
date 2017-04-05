@@ -9,6 +9,7 @@ import 'rxjs/Rx';
 import { AppComponent } from './app.component';
 import { AppRouting } from './app.routing';
 import { HomeComponent } from './components/home/home.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({ 
 
